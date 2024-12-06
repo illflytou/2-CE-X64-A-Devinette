@@ -12,12 +12,16 @@
         // Jeu de devinette de nombre
 
         alert("Bienvenue au jeu de devinette de nombre !");
-        const nombreMystere = Math.floor(Math.random() * 100) + 1; // Nombre entre 1 et 100
+        
+        let min = 1;
+        let max = 100;
+
+        const nombreMystere = Math.floor(Math.random() * max) + min; // Nombre entre 1 et 100
         let tentative = 0;
         let deviner = false;
 
         while (!deviner) {
-            const reponse = prompt("Devinez un nombre entre 1 et 100 :");
+            const reponse = prompt(`Devinez le nombre mystère entre ${min} et ${max} :`);
             tentative++;
 
             if (reponse === null) {
