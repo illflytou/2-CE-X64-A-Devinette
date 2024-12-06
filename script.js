@@ -1,5 +1,3 @@
-// Jeu de devinette avec interface HTML
-
 const min = 1; // Limite inférieure
 const max = 100; // Limite supérieure
 const nombreMystere = Math.floor(Math.random() * (max - min + 1)) + min; // Générer le nombre mystère
