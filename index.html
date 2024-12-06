@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeu de Devinette</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Jeu de devinette de nombre</h1>
-    <p>Essayez de deviner le nombre mystère entre les limites définies. Bonne chance !</p>
-
-    <!-- Lien vers le fichier JavaScript -->
-    <script src="jeudevinette.js"></script>
+    <div class="container">
+        <h1>Jeu de devinette de nombre</h1>
+        <p>Essayez de deviner le nombre mystère entre <span id="range"></span>.</p>
+        <div class="game-area">
+            <input type="number" id="guess" placeholder="Entrez un nombre" />
+            <button id="submit">Deviner</button>
+        </div>
+        <div id="feedback"></div>
+        <div id="attempts"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
